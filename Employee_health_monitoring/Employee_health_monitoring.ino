@@ -54,7 +54,6 @@ delay(5000);
 lcd.clear();
 lcd.setCursor(0,0);
 lcd.print("Getting Data....");
-Serial.begin(115200);
 Serial.println("AT");
 delay(1000);
 Serial.println("AT+GMR");
@@ -66,7 +65,7 @@ delay(5000);
 Serial.println("AT+CIPMUX=1");
 delay(1000);
  
-String cmd="AT+CWJAP=\"Sowmi\",\"9486578255\"";
+String cmd="AT+CWJAP=\"XXXXXX\",\"YYYYYYYY\"";
 Serial.println(cmd);
 delay(1000);
 Serial.println("AT+CIFSR");
